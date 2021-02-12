@@ -1,0 +1,41 @@
+﻿<Page x:Class="Crack_the_Code.SetCode"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Crack_the_Code"
+      mc:Ignorable="d" 
+      d:DesignHeight="768" d:DesignWidth="1360"
+      Title="SetCode">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Text="Set 4-Digit Code" Foreground="White" FontSize="80" Margin="50 0 0 0" VerticalAlignment="Center" HorizontalAlignment="Left" FontFamily="Courier New"/>
+
+        <Grid Grid.Row="1" Width="1000" Height="150" Margin="0 0 0 15" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width=".25*" />
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width=".25*" />
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width=".25*" />
+                <ColumnDefinition Width="2*" />
+            </Grid.ColumnDefinitions>
+            <TextBox x:Name="tb1" Grid.Column="0" FontSize="100" Width="150" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" MaxLength="1" FontFamily="Courier New" TextChanged="Tb1_TextChanged"/>
+            <TextBlock Grid.Column="1"  Text="-" FontSize="72" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBox x:Name="tb2" Grid.Column="2" Text="" FontSize="100" Width="150" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" MaxLength="1" FontFamily="Courier New" TextChanged="Tb2_TextChanged"/>
+            <TextBlock Grid.Column="3" Text="-" FontSize="72" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBox x:Name="tb3" Grid.Column="4" Text="" FontSize="100" Width="150" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" MaxLength="1" FontFamily="Courier New" TextChanged="Tb3_TextChanged"/>
+            <TextBlock Grid.Column="5" Text="-" FontSize="72" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBox x:Name="tb4" Grid.Column="6" Text="" FontSize="100" Width="150" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" MaxLength="1" FontFamily="Courier New"/>
+        </Grid>
+
+        <Button Grid.Row="2" Content="Enter" FontSize="40" Width="250" Height="75" Margin="0 0 50 0" VerticalAlignment="Center" HorizontalAlignment="Right" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="Button_Click" FontFamily="Courier New" IsDefault="True" />
+    </Grid>
+</Page>
